@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(245, 244, 244);
+  height: auto;
+}
+header {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+  height: auto;
+}
+.head {
+  font-size: 1.6rem;
+  width: 18rem;
+  margin: 1rem;
+}
+.text {
+  font-size: 1.5rem;
+  width: 50rem;
+  margin: 1rem;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem;
+}
+
+.images img {
+  width: 20rem;
+  height: 20rem;
+  margin: 1.5rem;
+}

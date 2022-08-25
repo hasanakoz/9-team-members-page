@@ -32,6 +32,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 4rem;
+  /* border: 2px solid red; */
 }
 
 .images img {
@@ -51,20 +52,30 @@ header {
 }
 @media (max-width: 800px) {
   .images .saba,
-  .images .lu,
-  .images .stan {
+  .images .lu {
     margin-top: 3rem;
+  }
+  .images .stan {
+    margin-top: 1rem;
   }
   .images .griff {
     margin-top: 0;
   }
   .images img {
-    width: 7rem;
-    height: 9rem;
+    width: 6rem;
+    height: 8rem;
+    margin-left: 0;
   }
   .head,
   .text {
     font-size: 1rem;
     margin-bottom: 0;
+    width: 25rem;
+  }
+  .images,
+  header {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
   }
 }

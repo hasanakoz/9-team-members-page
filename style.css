@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Comic Neue", cursive;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 5% auto;
+  background-color: rgb(223, 216, 216);
+  font-weight: bold;
+}
 .container {
   background-color: rgb(245, 244, 244);
   height: 100%;
@@ -11,72 +21,166 @@
 header {
   /* border: 2px solid red; */
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 2rem;
-  height: auto;
+  width: 100%;
+  margin-bottom: 2rem;
+  align-items: center;
 }
+
 .head {
-  font-size: 1.9rem;
-  width: 20rem;
-  margin: 1rem;
+  font-size: 1.3rem;
+  width: 50%;
+  text-align: center;
 }
 .text {
-  font-size: 1.8rem;
-  width: 50rem;
-  margin: 1rem;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: justify;
   font-weight: 500;
 }
 
-.images {
+.container {
   display: flex;
   flex-wrap: wrap;
-  margin: 4rem;
+  margin-top: 5%;
+  margin-left: 5rem;
+}
+
+.card {
+  display: flex;
+  width: 33%;
+  height: 15%;
   /* border: 2px solid red; */
 }
 
-.images img {
-  width: 20rem;
-  height: 25rem;
-  border: 1px solid gray;
-  border-radius: 2%;
-  box-shadow: 5px 5px 5px gray;
-  /* flex-shrink: 3; */
+.image {
+  width: 85%;
+  margin-bottom: 10%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 1.3rem;
 }
-.images div {
-  margin: 2rem;
+
+.saba,
+.griff {
+  margin-top: 2rem;
 }
-.images .saba,
-.images .griff {
-  margin-top: 5rem;
+
+img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2rem;
+  width: 75%;
+  transition: all 1s;
+  margin-bottom: 5%;
 }
-@media (max-width: 800px) {
-  .images .saba,
-  .images .lu {
-    margin-top: 3rem;
+
+img:hover {
+  transform: scale(110%);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px, 7px, 17px;
+}
+
+.card p:nth-child(1) {
+  padding-top: 110%;
+  margin-top: 10%;
+  width: 100%;
+  font-size: 0.8rem;
+  transform: rotate(90deg);
+  margin-left: -0.5rem;
+}
+
+@media (max-width: 1100px) {
+  body {
+    width: 80%;
   }
-  .images .stan {
-    margin-top: 1rem;
+  header {
+    flex-direction: column;
+    text-align: center;
   }
-  .images .griff {
+
+  .head {
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .card {
+    width: 50%;
+    margin: 1rem auto;
+  }
+  .saba,
+  .griff {
     margin-top: 0;
   }
-  .images img {
-    width: 6rem;
-    height: 8rem;
-    margin-left: 0;
+
+  .saba,
+  .lu,
+  .stan {
+    margin-top: 2rem;
   }
-  .head,
+
+  .image img {
+    width: 90%;
+  }
+  .image p {
+    font-size: 1.2rem;
+  }
+
+  .card p:nth-child(1) {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    width: 75%;
+    margin: 3rem auto;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .image p {
+    font-size: 1rem;
+    margin: auto;
+  }
+
+  header {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .head {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .text p {
+    display: none;
+  }
+
   .text {
     font-size: 1rem;
-    margin-bottom: 0;
-    width: 25rem;
+    width: 100%;
   }
-  .images,
-  header {
-    margin-left: 0;
-    margin-top: 0;
-    margin-right: 0.5rem;
-    padding-left: 0;
+
+  .card p:nth-child(1) {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    /* width: 85%; */
+    padding-right: 1rem;
+  }
+
+  .le {
+    width: 95%;
+    margin-right: 1.2rem;
   }
 }
